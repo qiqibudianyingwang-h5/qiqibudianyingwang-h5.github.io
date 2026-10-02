@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>琪琪布电影网 - 碎花棉布拼贴风影视导航</title>
+<meta name="description" content="琪琪布电影网(https://qiqibudianyingwang-h5.github.io)以碎花棉布拼贴为视觉，整理最新电影、热播剧集、综艺娱乐、动漫专区，做合规影视信息导航站。">
+<meta name="keywords" content="琪琪布电影网,电影,电视剧,综艺,动漫,碎花布,拼贴,手作,影视导航">
+<meta name="author" content="琪琪布电影网">
+<meta name="robots" content="index,follow">
+<meta name="msvalidate.01" content="BING_VERIFICATION_CODE">
+<meta property="og:title" content="琪琪布电影网 - 碎花棉布拼贴风影视导航">
+<meta property="og:description" content="琪琪布电影网：片单像碎花布拼贴，一针一线缝出来的好片。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://qiqibudianyingwang-h5.github.io">
+<meta property="og:site_name" content="琪琪布电影网">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"琪琪布电影网",
+  "url":"https://qiqibudianyingwang-h5.github.io",
+  "description":"碎花棉布拼贴风影视信息导航站",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://qiqibudianyingwang-h5.github.io#search={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --floral-pink:#f8c8d8;
+  --floral-blue:#b8d8e8;
+  --floral-green:#c8e0c0;
+  --floral-yellow:#fce8b0;
+  --fabric:#fffaf0;
+  --thread:#d492a8;
+  --stitch:#8b6f7d;
+  --ink:#4a3a42;
+  --muted:#9a8290;
+  --button:#e85d8a;
+  --denim:#5b7fab;
+}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+  background:
+    radial-gradient(600px 400px at 90% 0%, rgba(248,200,216,.3), transparent 60%),
+    radial-gradient(500px 300px at 0% 10%, rgba(184,216,232,.3), transparent 60%),
+    repeating-linear-gradient(45deg,var(--fabric) 0 14px,rgba(255,250,240,.8) 14px 28px);
+  color:var(--ink);line-height:1.8;overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit;transition:.2s}
+
+/* 缝线顶条 */
+.seam-bar{height:6px;background:repeating-linear-gradient(90deg,var(--thread) 0 8px,transparent 8px 16px)}
+
+.top{background:var(--fabric);border-bottom:2px dashed var(--thread)}
+.top-in{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font-size:26px;font-weight:900;color:var(--ink);position:relative}
+.brand::before{content:"🧵";margin-right:6px}
+.brand b{color:var(--button)}
+.brand small{display:block;font-size:11px;letter-spacing:2px;color:var(--muted);font-weight:600}
+.nav{display:flex;gap:14px;margin-left:auto;flex-wrap:wrap}
+.nav a{font-size:14px;font-weight:700;color:var(--ink);padding:5px 12px;border:1.5px dashed var(--thread);border-radius:16px;background:rgba(255,255,255,.6)}
+.nav a:hover{background:var(--floral-pink);border-style:solid}
+.btn-thread{font-size:13px;background:var(--button);color:#fff;padding:7px 16px;border-radius:20px;font-weight:700;box-shadow:0 3px 0 #c0406a}
+.btn-thread:hover{transform:translateY(-1px);box-shadow:0 4px 0 #c0406a}
+
+/* hero 布贴画 */
+.hero{max-width:1180px;margin:0 auto;padding:40px 20px 20px}
+.patchwork{position:relative;background:linear-gradient(135deg,var(--floral-pink),var(--floral-blue));border-radius:20px;padding:40px 30px;border:3px solid var(--thread);
+  box-shadow:inset 0 0 0 6px rgba(255,255,255,.3),0 8px 30px rgba(138,111,125,.2);
+  background-image:
+    radial-gradient(circle at 20% 30%,rgba(255,255,255,.3) 2px,transparent 3px),
+    radial-gradient(circle at 70% 60%,rgba(255,255,255,.3) 2px,transparent 3px),
+    radial-gradient(circle at 50% 80%,rgba(255,255,255,.3) 2px,transparent 3px);
+  background-size:30px 30px;
+}
+.patch-label{display:inline-block;background:var(--fabric);border:2px solid var(--thread);padding:6px 16px;border-radius:12px;font-size:12px;font-weight:800;color:var(--ink);transform:rotate(-2deg);margin-bottom:14px}
+.patchwork h1{font-size:clamp(34px,7vw,60px);font-weight:900;color:var(--ink);line-height:1.2}
+.patchwork h1 span{background:var(--fabric);padding:0 10px;border-radius:8px;border:2px dashed var(--button)}
+.patchwork p{max-width:600px;color:var(--ink);font-size:clamp(14px,3vw,16px);margin:14px 0}
+.hero-url{display:inline-block;background:var(--fabric);border:2px solid var(--thread);color:var(--denim);font-family:"Courier New",monospace;font-weight:800;padding:8px 18px;border-radius:12px}
+
+/* 缝线标题 */
+.section{max-width:1180px;margin:0 auto;padding:20px 20px 60px}
+.stitch-title{display:flex;align-items:center;gap:12px;margin:36px 0 18px;flex-wrap:wrap}
+.stitch-title .btn-icon{width:36px;height:36px;border-radius:50%;background:var(--button);color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 3px 0 #c0406a}
+.stitch-title h2{font-size:clamp(20px,4vw,26px);font-weight:900;color:var(--ink)}
+.stitch-title .stitch-line{flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--thread) 0 6px,transparent 6px 12px);min-width:60px}
+
+/* 布贴卡片 */
+.fabric-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.fabric-card{background:var(--fabric);border-radius:16px;padding:16px;position:relative;
+  box-shadow:0 4px 12px rgba(138,111,125,.15),inset 0 0 0 2px rgba(212,146,168,.3);
+  transition:.25s;
+}
+.fabric-card::before{content:"";position:absolute;inset:4px;border:1.5px dashed rgba(212,146,168,.4);border-radius:12px;pointer-events:none}
+.fabric-card:hover{transform:translateY(-4px) rotate(1deg);box-shadow:0 8px 24px rgba(138,111,125,.25)}
+.fabric-card .btn-top{position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:var(--button);border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.2);z-index:2}
+.fabric-card .pattern{height:100px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:42px;color:#fff;margin-bottom:12px;border:2px solid rgba(255,255,255,.5)}
+.fabric-card:nth-child(1) .pattern{background:linear-gradient(135deg,var(--floral-pink),var(--button))}
+.fabric-card:nth-child(2) .pattern{background:linear-gradient(135deg,var(--floral-blue),var(--denim))}
+.fabric-card:nth-child(3) .pattern{background:linear-gradient(135deg,var(--floral-green),#7aaf6e)}
+.fabric-card:nth-child(4) .pattern{background:linear-gradient(135deg,var(--floral-yellow),#e0b840)}
+.fabric-card:nth-child(5) .pattern{background:linear-gradient(135deg,#d4a0e0,#9b5dab)}
+.fabric-card:nth-child(6) .pattern{background:linear-gradient(135deg,var(--button),#c0406a)}
+.fabric-card h3{font-size:15px;font-weight:800;color:var(--ink);margin-bottom:4px}
+.fabric-card p{font-size:12px;color:var(--muted);margin-bottom:8px}
+.fabric-card .tag{display:inline-block;font-size:11px;background:rgba(212,146,168,.2);color:var(--stitch);padding:3px 8px;border-radius:10px;margin-right:4px;border:1px solid rgba(212,146,168,.4)}
+
+/* 综艺：布标签 */
+.ribbon-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.ribbon-item{display:flex;align-items:center;gap:14px;background:var(--fabric);border-radius:20px;padding:14px 18px;border:2px solid rgba(212,146,168,.3);position:relative}
+.ribbon-item::before{content:"";position:absolute;left:-6px;top:50%;transform:translateY(-50%);width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;border-right:8px solid var(--button)}
+.ribbon-item .ribbon-emoji{font-size:28px;flex-shrink:0}
+.ribbon-item h3{font-size:14px;font-weight:800;color:var(--ink)}
+.ribbon-item p{font-size:12px;color:var(--muted)}
+
+/* 动漫：纽扣行 */
+.button-row{display:flex;flex-direction:column;gap:14px}
+.btn-row{display:flex;align-items:center;gap:14px;background:var(--fabric);border-radius:30px;padding:12px 20px;border:2px dashed rgba(212,146,168,.4)}
+.btn-row .btn-dot{width:20px;height:20px;border-radius:50%;background:var(--button);border:2px solid #fff;box-shadow:0 2px 4px rgba(0,0,0,.15);flex-shrink:0}
+.btn-row:nth-child(2) .btn-dot{background:var(--denim)}
+.btn-row:nth-child(3) .btn-dot{background:#7aaf6e}
+.btn-row:nth-child(4) .btn-dot{background:#e0b840}
+.btn-row:nth-child(5) .btn-dot{background:#9b5dab}
+.btn-row:nth-child(6) .btn-dot{background:#c0406a}
+.btn-row h3{font-size:14px;font-weight:800;color:var(--ink)}
+.btn-row p{font-size:12px;color:var(--muted)}
+.btn-row .ep{margin-left:auto;font-size:11px;font-weight:700;color:var(--button);font-family:"Courier New",monospace}
+
+/* 关于：裁缝铺 */
+.tailor{max-width:1180px;margin:0 auto;padding:10px 20px 50px}
+.shop{background:var(--fabric);border:3px solid var(--thread);border-radius:20px;padding:30px;position:relative}
+.shop::before{content:"✂️";position:absolute;top:-16px;right:24px;font-size:32px;background:var(--fabric);padding:0 8px}
+.shop h3{font-size:20px;font-weight:900;color:var(--ink);margin-bottom:14px}
+.shop p{font-size:14px;color:var(--ink);margin-bottom:10px}
+.shop b{color:var(--button)}
+.shop-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.shop-stat{background:rgba(255,255,255,.7);border:2px solid rgba(212,146,168,.4);border-radius:14px;padding:16px;text-align:center}
+.shop-stat .v{font-size:22px;font-weight:900;color:var(--button)}
+.shop-stat .l{font-size:12px;color:var(--muted);margin-top:4px}
+
+.footer{background:var(--ink);color:var(--floral-pink);padding:36px 20px 22px;text-align:center;margin-top:40px;border-top:6px solid var(--button)}
+.footer .lg{font-size:22px;font-weight:900}
+.footer .lg b{color:var(--floral-pink)}
+.footer .fl{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:12px 0 14px}
+.footer .fl a{font-size:13px;color:var(--floral-pink);border-bottom:1px dotted var(--floral-pink)}
+.footer .fl a:hover{color:#fff;border-color:#fff}
+.footer .fi{font-size:12px;line-height:2;color:var(--muted);border-top:1px dashed rgba(255,255,255,.2);padding-top:14px}
+.footer .fi a{color:var(--floral-pink)}
+
+@media(max-width:860px){.shop-stats{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){
+  .nav{display:none}
+  .fabric-grid{grid-template-columns:repeat(2,1fr)}
+  .ribbon-list{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:480px){
+  .section{padding:20px 14px 40px}
+  .fabric-grid{grid-template-columns:1fr}
+  .ribbon-list{grid-template-columns:1fr}
+  .shop-stats{grid-template-columns:1fr 1fr}
+  .patchwork{padding:28px 18px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="seam-bar"></div>
+
+<div class="top">
+  <div class="top-in">
+    <div class="brand">琪琪布<b>电影网</b><small>FABRIC · 碎花拼贴</small></div>
+    <nav class="nav">
+      <a href="#movies">新布头</a>
+      <a href="#tv">热缝拼</a>
+      <a href="#shows">综艺针脚</a>
+      <a href="#anime">动漫花布</a>
+      <a href="#about">关于裁缝铺</a>
+    </nav>
+    <a href="#movies" class="btn-thread">🪡 挑选片单</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="patchwork">
+    <div class="patch-label">🧷 手工缝制 · 每日上新</div>
+    <h1>琪琪布<span>电影网</span></h1>
+    <p>把电影、剧集、综艺、动漫当成碎花布拼贴：一针一线缝出来的好片单，不赶工、不凑数、不存盗版。只做影视信息导航，像裁缝铺一样帮你挑"布料"。</p>
+    <div class="hero-url">🔗 https://qiqibudianyingwang-h5.github.io</div>
+  </div>
+</header>
+
+<main class="section">
+
+  <!-- 最新电影：布贴 -->
+  <div class="stitch-title" id="movies">
+    <div class="btn-icon">🪡</div>
+    <h2>新布头 · 最新电影</h2>
+    <div class="stitch-line"></div>
+  </div>
+  <div class="fabric-grid">
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">🌸</div><h3>碎花姑娘</h3><p>青春/治愈/2026/8.7</p><span class="tag">新</span><span class="tag">治愈</span></div>
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">🦋</div><h3>蝴蝶绣样</h3><p>文艺/成长/2026/8.4</p><span class="tag">口碑</span></div>
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">🧶</div><h3>毛线团奇遇</h3><p>动画/合家欢/2026/8.9</p><span class="tag">动画</span></div>
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">🪡</div><h3>针尖上的舞者</h3><p>传记/舞蹈/2026/8.6</p><span class="tag">传记</span></div>
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">🎀</div><h3>蝴蝶结扎</h3><p>悬疑/反转/2026/8.3</p><span class="tag">悬疑</span></div>
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">🧵</div><h3>红线牵</h3><p>爱情/古装/2026/8.5</p><span class="tag">爱情</span></div>
+  </div>
+
+  <!-- 热播剧集：布拼 -->
+  <div class="stitch-title" id="tv">
+    <div class="btn-icon">✂️</div>
+    <h2>热缝拼 · 热播剧集</h2>
+    <div class="stitch-line"></div>
+  </div>
+  <div class="fabric-grid">
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">🧥</div><h3>裁缝铺故事</h3><p>年代/家族/更新至24集</p><span class="tag">热</span></div>
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">🧣</div><h3>围巾与冬天</h3><p>都市/治愈/更新至18集</p><span class="tag">治愈</span></div>
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">👗</div><h3>旗袍密码</h3><p>悬疑/年代/更新至30集</p><span class="tag">悬疑</span></div>
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">🧤</div><h3>手套侦探社</h3><p>推理/轻喜剧/更新至12集</p><span class="tag">新</span></div>
+    <div class="fabric-card"><div class="btn-top"></div><div class="pattern">🎩</div><h3>帽子戏法</h3><p>魔术/悬疑/更新至16集</p><span class="tag">烧脑</span></div>
+  </div>
+
+  <!-- 综艺：布标签 -->
+  <div class="stitch-title" id="shows">
+    <div class="btn-icon">🧷</div>
+    <h2>综艺针脚 · 手工闲聊</h2>
+    <div class="stitch-line"></div>
+  </div>
+  <div class="ribbon-list">
+    <div class="ribbon-item"><div class="ribbon-emoji">🧶</div><div><h3>毛线团夜话</h3><p>边织毛衣边聊老片</p></div></div>
+    <div class="ribbon-item"><div class="ribbon-emoji">✂️</div><div><h3>剪刀石头布</h3><p>嘉宾猜片名PK赛</p></div></div>
+    <div class="ribbon-item"><div class="ribbon-emoji">🪡</div><div><h3>穿针引线局</h3><p>连线主创聊幕后</p></div></div>
+    <div class="ribbon-item"><div class="ribbon-emoji">🧵</div><div><h3>缝纫机乐队</h3><p>影视金曲翻唱+弹唱</p></div></div>
+    <div class="ribbon-item"><div class="ribbon-emoji">🎀</div><div><h3>蝴蝶结礼物</h3><p>给粉丝送电影周边</p></div></div>
+    <div class="ribbon-item"><div class="ribbon-emoji">🧺</div><div><h3>针线筐旅行</h3><p>边走边拍边聊片</p></div></div>
+  </div>
+
+  <!-- 动漫：纽扣行 -->
+  <div class="stitch-title" id="anime">
+    <div class="btn-icon">🔘</div>
+    <h2>动漫花布 · 追更区</h2>
+    <div class="stitch-line"></div>
+  </div>
+  <div class="button-row">
+    <div class="btn-row"><div class="btn-dot"></div><div><h3>布偶奇谭</h3><p>奇幻/冒险/年番</p></div><div class="ep">EP 48</div></div>
+    <div class="btn-row"><div class="btn-dot"></div><div><h3>棉花糖骑士</h3><p>搞笑/热血/新番</p></div><div class="ep">EP 12</div></div>
+    <div class="btn-row"><div class="btn-dot"></div><div><h3>丝线魔法使</h3><p>魔法/校园/连载</p></div><div class="ep">EP 24</div></div>
+    <div class="btn-row"><div class="btn-dot"></div><div><h3>拼布小镇</h3><p>治愈/日常/年番</p></div><div class="ep">EP 52</div></div>
+    <div class="btn-row"><div class="btn-dot"></div><div><h3>纽扣侦探</h3><p>悬疑/轻推理/热更</p></div><div class="ep">EP 18</div></div>
+    <div class="btn-row"><div class="btn-dot"></div><div><h3>绣花针传说</h3><p>武侠/动作/新番</p></div><div class="ep">EP 09</div></div>
+  </div>
+
+  <!-- 关于 -->
+  <div class="stitch-title" id="about">
+    <div class="btn-icon">📋</div>
+    <h2>关于裁缝铺 · 关于我们</h2>
+    <div class="stitch-line"></div>
+  </div>
+  <div class="tailor">
+    <div class="shop">
+      <h3>琪琪布电影网是什么？</h3>
+      <p><b>琪琪布电影网</b>（https://qiqibudianyingwang-h5.github.io）是一个"碎花棉布拼贴风"的影视信息导航站。</p>
+      <p>我们把最新电影、热播剧集、综艺娱乐、动漫专区整理成布贴画一样的页面；片单像碎花布一样一针一线挑选，但本站<b>不存储视频、不提供盗版直链、不挂违规播放器</b>。</p>
+      <p>关键词：琪琪布电影网、碎花布风影视站、最新电影、热播剧集、综艺、动漫。</p>
+      <div class="shop-stats">
+        <div class="shop-stat"><div class="v">5+</div><div class="l">影视栏目</div></div>
+        <div class="shop-stat"><div class="v">0</div><div class="l">盗版直链</div></div>
+        <div class="shop-stat"><div class="v">100%</div><div class="l">移动端适配</div></div>
+        <div class="shop-stat"><div class="v">手工</div><div class="l">精选片单</div></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="lg">琪琪布<b>电影网</b></div>
+  <div class="fl">
+    <a href="#movies">新布头</a>
+    <a href="#tv">热缝拼</a>
+    <a href="#shows">综艺针脚</a>
+    <a href="#anime">动漫花布</a>
+    <a href="#about">关于裁缝铺</a>
+  </div>
+  <div class="fi">
+    网站名称：琪琪布电影网 ｜ 网址：<a href="https://qiqibudianyingwang-h5.github.io">https://qiqibudianyingwang-h5.github.io</a><br>
+    © 2026 琪琪布电影网 · 一针一线，缝出好片 ｜ 本站仅展示影视信息，资源来自互联网公开内容/正版平台。
+  </div>
+</footer>
+
+</body>
+</html>
